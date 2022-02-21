@@ -12,30 +12,13 @@
 **Lab Partners: Ben Clark and Devorah Simon**
 
 
-                        **Instructor:**
-
-
+                        Instructor:
                         Steven Clark
-
-
                         Lecturer
-
-
-                            Electrical Engineering Department
-
-
+                        Electrical Engineering Department
                         David Packard Building, Room 112
-
-
                         350 Jane Stanford Way
-
-
                         Stanford, CA, 94305-9505
-
-
-                        +1 650 723 1660
-
-
                         [steven.clark@stanford.edu](mailto:steven.clark@stanford.edu)
                         
 

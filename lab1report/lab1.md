@@ -40,7 +40,7 @@ To start, we were given mini-VNAs and had to learn how to use these little VNAs.
 
 After establishing familiarity with our NanoVNA, we could move onto calibrating, then onto measuring, and finally reporting. The first part of this setup was calibrating the VNA. After getting the NanoVNA software downloaded and booted, we connected and powered on our NanoVNA to our computer to interface with the software. On the software, it gives us options for calibration and on the webpage for the software, it also shows us what steps exactly to do for calibration. Within the lab handout as well, it reminds us of SOLT and how we should calibrate. First calibrate the short, open, load, and finally the through! All went smooth and with our connected wires and we calibrated the VNA successfully.
 
-From then on we had our testing board which contained different passive components and filters. This was the RF demo kit board (shown in **Figure 2). **Having calibrated the VNA, we could then capture what these components looked like on the smith chart shown on the VNA.
+From then on we had our testing board which contained different passive components and filters. This was the RF demo kit board (shown in **Figure 2).** Having calibrated the VNA, we could then capture what these components looked like on the smith chart shown on the VNA.
 
 
 ![alt_text](images/image2.jpg "image_tooltip")

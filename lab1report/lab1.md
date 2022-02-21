@@ -1,12 +1,28 @@
-<p style="color: red; font-weight: bold">>>>>>  gd2md-html alert:  ERRORs: 0; WARNINGs: 0; ALERTS: 4.</p>
-<ul style="color: red; font-weight: bold"><li>See top comment block for details on ERRORs and WARNINGs. <li>In the converted Markdown or HTML, search for inline alerts that start with >>>>>  gd2md-html alert:  for specific instances that need correction.</ul>
+<!-----
 
-<p style="color: red; font-weight: bold">Links to alert messages:</p><a href="#gdcalert1">alert1</a>
-<a href="#gdcalert2">alert2</a>
-<a href="#gdcalert3">alert3</a>
-<a href="#gdcalert4">alert4</a>
+You have some errors, warnings, or alerts. If you are using reckless mode, turn it off to see inline alerts.
+* ERRORs: 0
+* WARNINGs: 0
+* ALERTS: 4
 
-<p style="color: red; font-weight: bold">>>>>> PLEASE check and correct alert issues and delete this message and the inline alerts.<hr></p>
+Conversion time: 1.111 seconds.
+
+
+Using this Markdown file:
+
+1. Paste this output into your source file.
+2. See the notes and action items below regarding this conversion run.
+3. Check the rendered output (headings, lists, code blocks, tables) for proper
+   formatting and use a linkchecker before you publish this page.
+
+Conversion notes:
+
+* Docs to Markdown version 1.0β33
+* Sun Feb 20 2022 22:42:12 GMT-0800 (PST)
+* Source doc: Lab 1 Report
+* This document has images: check for >>>>>  gd2md-html alert:  inline image link in generated source and store images to your server. NOTE: Images in exported zip file from Google Docs may not appear in  the same order as they do in your doc. Please check the images!
+
+----->
 
 
 **EE 133: Intro to RF Systems Laboratory**
@@ -83,28 +99,16 @@ Finally, the last of the RF demo kit VNA measurements I’ll be showing is of so
 Next we have what the individual components we measured were. These were the ones we soldered onto a copper plate with SMA connectors and then soldered the ends of the passive components to the middle connection of the SMA connector. We measured a capacitor first and this is what the smith chart for it looked like as seen on **Figure 6. **What we can gather here is that the self resonance frequency is at around 30MHz. How see this is from the S11 blue measurement on the VNA display, we see at that frequency, a dip happens to around -35db. I take this to mean that at that frequency, the circuit isn’t reflecting back as much as it was and instead is absorbing and dissipating energy out from itself as it does when it resonantes. This also largely looked as it should as we can see the resonance frequency here where it starts acting like an inductor for a little then goes back to being capacitive after crossing the resonance point.
 
 
-
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.jpg). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](images/image1.jpg "image_tooltip")
 
 
 For the inductor we got a little bit of an iffy/weird smith chart but since an inductor is a less ideal component, I just casted it away to that though it was still pretty ugly barring that.When things don’t look right to me, I ask around and look to my peers for guidance and just check in to make sure I am not completely off; I did so in this situation and the ones whom I asked said their measurements for the inductors looked similar as well. Looking at **Figure 7, **on this smith chart it appears there's really almost 2 points where it resonates and acts as a capacitor for a good chunk of the sweep as it dips and spirals into the lower bottom half of the smith chart. I attribute this too as well to the fact that when the inductor gets really high in frequency, it acts like an open so more of the parasics and capicances may take over when the set up I soldered on the inductor too didn’t have the best insulation and protection from parasitics. Yet still, it had it’s largest resonance frequency at around 111 MHz so this is what we’ll want to simulate later on.
 
 
-
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.jpg). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](images/image2.jpg "image_tooltip")
 
 
 Finally onto the LTspice simulation, we can see that what we simulated isn’t quite exactly what we measured in real life but we adjust it as we go to try and understand the parasitics of components and just generally the setup of them. Below on **Figure 8** is the spice simulation for the capacitor which we see goes downwards in it’s resonance and then goes back up as the capacitors allow high frequencies through. For this model, I had to tweak the inductance which I believe to be high because of the set up of the board and how close the plates and connectors all are to each other–it was a bit messy and caused some ugly parasitics. Yet still, I was able to get the simulation to peak at around a resonance of 30MHz as we got in real life
-
-
-
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.jpg). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
 ![alt_text](images/image3.jpg "image_tooltip")
@@ -114,10 +118,6 @@ The opposite is then true for the inductor which only allows low frequencies to 
 
 
     
-
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.jpg). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](images/image4.jpg "image_tooltip")
 
 

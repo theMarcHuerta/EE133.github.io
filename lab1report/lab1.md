@@ -1,29 +1,3 @@
-<!-----
-
-You have some errors, warnings, or alerts. If you are using reckless mode, turn it off to see inline alerts.
-* ERRORs: 0
-* WARNINGs: 0
-* ALERTS: 9
-
-Conversion time: 3.704 seconds.
-
-
-Using this Markdown file:
-
-1. Paste this output into your source file.
-2. See the notes and action items below regarding this conversion run.
-3. Check the rendered output (headings, lists, code blocks, tables) for proper
-   formatting and use a linkchecker before you publish this page.
-
-Conversion notes:
-
-* Docs to Markdown version 1.0β33
-* Sun Feb 20 2022 22:50:48 GMT-0800 (PST)
-* Source doc: Lab 1 Report
-* This document has images: check for >>>>>  gd2md-html alert:  inline image link in generated source and store images to your server. NOTE: Images in exported zip file from Google Docs may not appear in  the same order as they do in your doc. Please check the images!
-
------>
-
 
 **EE 133: Intro to RF Systems Laboratory**
 
@@ -38,7 +12,7 @@ Conversion notes:
 **Lab Partners: Ben Clark and Devorah Simon**
 
 
-                        **_Instructor:_**
+                        **Instructor:**
 
 
                         Steven Clark
@@ -63,6 +37,7 @@ Conversion notes:
 
 
                         [steven.clark@stanford.edu](mailto:steven.clark@stanford.edu)
+                        
 
 **Abstract**
 

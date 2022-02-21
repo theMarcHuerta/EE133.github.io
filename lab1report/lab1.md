@@ -76,7 +76,7 @@ Before the lab, I was rather unfamiliar with what a VNA was or what it really di
 
 **Experimental Setup**
 
-To start, we were given mini-VNAs and had to learn how to use these little VNAs. Specifically it was the NanoVNA2 Plus4 ( shown in **Figure 1) **which are small but relatively affordable VNAs that were essentially ‘good enough’ to get most of the measurements we needed. The best thing about it was that there was some open source software called vna_qt available to interface the VNA with our computer and view the smith chart and data from the VNA on the computer.
+To start, we were given mini-VNAs and had to learn how to use these little VNAs. Specifically it was the NanoVNA2 Plus4 ( shown in **Figure 1)** which are small but relatively affordable VNAs that were essentially ‘good enough’ to get most of the measurements we needed. The best thing about it was that there was some open source software called vna_qt available to interface the VNA with our computer and view the smith chart and data from the VNA on the computer.
 ![alt_text](images/image1.jpg "image_tooltip")
 
 
@@ -92,9 +92,9 @@ Finally, for the last part of the lab, we soldered a copper ground plate to 2 SM
 
 **Measurements and Results**
 
-We’ll first quickly go through some of the measurements we got on the VNA while measuring the RF demo kit. For the most part, a lot of the measurements were consistent with what the RF demo kit (**Figure 2) **said they should look like so I won’t show all the measurements we took, only some good examples to note.
+We’ll first quickly go through some of the measurements we got on the VNA while measuring the RF demo kit. For the most part, a lot of the measurements were consistent with what the RF demo kit **(Figure 2)** said they should look like so I won’t show all the measurements we took, only some good examples to note.
 
-The first measurement we’ll look at is some basic resistors we measured from the RF demo kit as shown in **Figure 3**. As we know them to be, resistor impedance is real and the middle line and axis on the smith chart plots real values so we expect the resistor to lie on that axis and it does. It also matches what **Figure 2 (components 3 and 4) **said they should look similar to as well. We see here that it does sweep a bit up towards being a bit inductive but this is due to parasitics as we swept from 0 to 200mHZ.
+The first measurement we’ll look at is some basic resistors we measured from the RF demo kit as shown in **Figure 3**. As we know them to be, resistor impedance is real and the middle line and axis on the smith chart plots real values so we expect the resistor to lie on that axis and it does. It also matches what **Figure 2 (components 3 and 4)** said they should look similar to as well. We see here that it does sweep a bit up towards being a bit inductive but this is due to parasitics as we swept from 0 to 200mHZ.
 
 
     
@@ -115,13 +115,13 @@ Finally, the last of the RF demo kit VNA measurements I’ll be showing is of so
 ![alt_text](images/image5.jpg "image_tooltip")
 
 
-Next we have what the individual components we measured were. These were the ones we soldered onto a copper plate with SMA connectors and then soldered the ends of the passive components to the middle connection of the SMA connector. We measured a capacitor first and this is what the smith chart for it looked like as seen on **Figure 6. **What we can gather here is that the self resonance frequency is at around 30MHz. How see this is from the S11 blue measurement on the VNA display, we see at that frequency, a dip happens to around -35db. I take this to mean that at that frequency, the circuit isn’t reflecting back as much as it was and instead is absorbing and dissipating energy out from itself as it does when it resonantes. This also largely looked as it should as we can see the resonance frequency here where it starts acting like an inductor for a little then goes back to being capacitive after crossing the resonance point.
+Next we have what the individual components we measured were. These were the ones we soldered onto a copper plate with SMA connectors and then soldered the ends of the passive components to the middle connection of the SMA connector. We measured a capacitor first and this is what the smith chart for it looked like as seen on **Figure 6.** What we can gather here is that the self resonance frequency is at around 30MHz. How see this is from the S11 blue measurement on the VNA display, we see at that frequency, a dip happens to around -35db. I take this to mean that at that frequency, the circuit isn’t reflecting back as much as it was and instead is absorbing and dissipating energy out from itself as it does when it resonantes. This also largely looked as it should as we can see the resonance frequency here where it starts acting like an inductor for a little then goes back to being capacitive after crossing the resonance point.
 
 
 ![alt_text](images/image6.jpg "image_tooltip")
 
 
-For the inductor we got a little bit of an iffy/weird smith chart but since an inductor is a less ideal component, I just casted it away to that though it was still pretty ugly barring that.When things don’t look right to me, I ask around and look to my peers for guidance and just check in to make sure I am not completely off; I did so in this situation and the ones whom I asked said their measurements for the inductors looked similar as well. Looking at **Figure 7, **on this smith chart it appears there's really almost 2 points where it resonates and acts as a capacitor for a good chunk of the sweep as it dips and spirals into the lower bottom half of the smith chart. I attribute this too as well to the fact that when the inductor gets really high in frequency, it acts like an open so more of the parasics and capicances may take over when the set up I soldered on the inductor too didn’t have the best insulation and protection from parasitics. Yet still, it had it’s largest resonance frequency at around 111 MHz so this is what we’ll want to simulate later on.
+For the inductor we got a little bit of an iffy/weird smith chart but since an inductor is a less ideal component, I just casted it away to that though it was still pretty ugly barring that.When things don’t look right to me, I ask around and look to my peers for guidance and just check in to make sure I am not completely off; I did so in this situation and the ones whom I asked said their measurements for the inductors looked similar as well. Looking at **Figure 7,** on this smith chart it appears there's really almost 2 points where it resonates and acts as a capacitor for a good chunk of the sweep as it dips and spirals into the lower bottom half of the smith chart. I attribute this too as well to the fact that when the inductor gets really high in frequency, it acts like an open so more of the parasics and capicances may take over when the set up I soldered on the inductor too didn’t have the best insulation and protection from parasitics. Yet still, it had it’s largest resonance frequency at around 111 MHz so this is what we’ll want to simulate later on.
 
 
 ![alt_text](images/image7.jpg "image_tooltip")

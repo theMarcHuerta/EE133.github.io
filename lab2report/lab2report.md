@@ -30,8 +30,7 @@ Of course the goals still stood of actually understanding how to use a clock gen
 To begin, I’ll list out the 2 main physical pieces of hardware we were given to start this lab. Firstly as already mentioned, we were given a Adafruit Si5351A Clock Generator Breakout Board and secondly we were given an Adafruit ItsyBitsy M4 express. Of note right away is that they are both parts made by Adafriuit so the hope with this off the get go is that the ItsyBitsy will have some sort of support in the form of code library to help us interface face with the Si5351A (which is indeed the case). To recap this first step, we just got these 2 pieces of hardware and soldered on some SMA connectors onto the breakout board as well. We then with some jumper wires connected the corresponding pins from the breakout board to the microcontroller and double checked on the breakout board documentation if these were the correct pins to connect the board to. The put together board can be seen here in **Figure 1.** 
 
 
-![](images/image1.jpg)
-<img src="images/image1.jpg" width="800" height="800" />
+<img src="images/image1.jpg" width="800" height="600" />
 
 
 After getting the hardware setup on the board, we moved onto using the microcontroller to interface with it. To do this, that is where a bit of the transferable skills of self research into a manufacturers websites came in handy. Though we were given a good starting point from our instructor as to the links to look towards, it still took a bit of digging to find what we needed. To summarize quickly what we did to get set up with the software side of things:
@@ -44,7 +43,7 @@ After getting the hardware setup on the board, we moved onto using the microcont
 After doing all these steps and sifting through various libraries to download and run the clock generator with ease, we got to this point as shown in **Figure 2** where we had editable code and could run 3 different clock frequencies on the breakout board!
 
 
-![alt_text](images/image2.jpg "image_tooltip")
+<img src="images/image2.jpg" width="600" height="600" />
 
 
 **Measurements and Results**
@@ -54,25 +53,25 @@ Before we can formulate more specific questions, the first and most important qu
 To start with the cleanest output we got, we refer to clock 2 running at 10.7KHz as we see in **Figure 2**, the bottom of the screen is the serial output which is coded to show us frequencies each clock is running at. Here is a good point to form a basis of how internally the Si5351A does this at the level of a block diagram. Shown below in **Figure 3.** Essentially what the code does is it sets each PLL (both A and B) to a multiple frequency of the onboard 25MHz reference crystal. Within the PLL part of the diagram, there is some internal multiplier that does this and with the arduino and I2C interface, we can set the multiple of the local reference oscillator we want the PLL to be set to. Then for the clock output, it divides this intermediary frequency using fractional dividers which essentially just means it can divide this intermediary frequency fractional by a divisor of 1MHz to 100KHz. The range on an output of a clock is said by the manufacturer to be 160Mhz to as low as 8KHz.
 
 
-![alt_text](images/image3.jpg "image_tooltip")
+<img src="images/image3.jpg" width="800" height="600" />
 
 
 A good clock oscillator looks ideally like a perfect square wave. We do know that due to the fact we can’t have infinitely summed high frequencies, there will be imperfections in a recreated square wave, usually some sort of Gibbs phenomenon which leads to peaking at the rising edge of the clock and at the falling edge. Now we look at **Figure 4** on the left hand side, we can see that the 10KHz clock signal on the oscilloscope looks pretty good like a square wave with some of that gibbs phenomena discussed. On the right hand side, we see a measurement on the VNA (this picture taken courtesy of my lab partner Devorah Simon). We see there is relatively low noise surrounding the signal as well. 
 
 
-![alt_text](images/image4.jpg "image_tooltip")
+<img src="images/image4.jpg" width="800" height="500" />
 
 
 Going into the 13MHz clock, we start to see both more noise on the spectrum and see the square wave start to look a bit uglier and imperfect. This is caused by several reasons. First of all (by my own doing and to my demise) I used a probe to measure the clock generator output, which after researching about it, seems it had some unintended consequences of adding extra unwanted capacitance to the singal I read. As a result, this extra capacitance forms a low-pass filter which filters out high frequencies and hence, makes the square wave look uglier at higher frequencies. The probe also has limited bandwidth lower than the oscilloscope which has a bandwidth of 500MHz so this could also contribute. Below in **Figure 5,** is a set up of my probe (left) along with the measured 13MHz clock signal (right)
 
 
-![alt_text](images/image5.jpg "image_tooltip")
+<img src="images/image5.jpg" width="800" height="400" />
 
 
 Finally for our last measurement, clock 0 is the output of the clock generator breakout board. Again there was much noise gathered here that made the signal look bad as it did for the 13MHz one. Comparing the noise floor on the VNA of the 10KHz clock and this 112MHz clock, we can see a lot more phase noise as the peak is more broad as well in **Figure 6 **and the SNR is lower than it was in the 10KHz spectrum**.** The amount of noise we can see here compared to the 10KHz signal indicates to me that it is not a low noise part.
 
 
-![alt_text](images/image6.jpg "image_tooltip")
+<img src="images/image5.jpg" width="800" height="600" />
 
 
 **Discussion**

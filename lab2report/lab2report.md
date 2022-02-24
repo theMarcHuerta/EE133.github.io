@@ -30,7 +30,7 @@ Of course the goals still stood of actually understanding how to use a clock gen
 To begin, I’ll list out the 2 main physical pieces of hardware we were given to start this lab. Firstly as already mentioned, we were given a Adafruit Si5351A Clock Generator Breakout Board and secondly we were given an Adafruit ItsyBitsy M4 express. Of note right away is that they are both parts made by Adafriuit so the hope with this off the get go is that the ItsyBitsy will have some sort of support in the form of code library to help us interface face with the Si5351A (which is indeed the case). To recap this first step, we just got these 2 pieces of hardware and soldered on some SMA connectors onto the breakout board as well. We then with some jumper wires connected the corresponding pins from the breakout board to the microcontroller and double checked on the breakout board documentation if these were the correct pins to connect the board to. The put together board can be seen here in **Figure 1.** 
 
 
-<img src="images/image1.jpg" width="800" height="600" />
+<img src="images/image1.jpg" width="700" height="600" />
 
 
 After getting the hardware setup on the board, we moved onto using the microcontroller to interface with it. To do this, that is where a bit of the transferable skills of self research into a manufacturers websites came in handy. Though we were given a good starting point from our instructor as to the links to look towards, it still took a bit of digging to find what we needed. To summarize quickly what we did to get set up with the software side of things:
@@ -43,7 +43,7 @@ After getting the hardware setup on the board, we moved onto using the microcont
 After doing all these steps and sifting through various libraries to download and run the clock generator with ease, we got to this point as shown in **Figure 2** where we had editable code and could run 3 different clock frequencies on the breakout board!
 
 
-<img src="images/image2.jpg" width="600" height="600" />
+<img src="images/image2.jpg" width="600" height="500" />
 
 
 **Measurements and Results**
@@ -71,7 +71,7 @@ Going into the 13MHz clock, we start to see both more noise on the spectrum and 
 Finally for our last measurement, clock 0 is the output of the clock generator breakout board. Again there was much noise gathered here that made the signal look bad as it did for the 13MHz one. Comparing the noise floor on the VNA of the 10KHz clock and this 112MHz clock, we can see a lot more phase noise as the peak is more broad as well in **Figure 6 **and the SNR is lower than it was in the 10KHz spectrum**.** The amount of noise we can see here compared to the 10KHz signal indicates to me that it is not a low noise part.
 
 
-<img src="images/image5.jpg" width="800" height="600" />
+<img src="images/image5.jpg" width="900" height="600" />
 
 
 **Discussion**

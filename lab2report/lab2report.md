@@ -31,7 +31,7 @@ To begin, I’ll list out the 2 main physical pieces of hardware we were given t
 
 
 ![](images/image1.jpg)
-<img src="images/image1.jpg" width="200" height="200" />
+<img src="images/image1.jpg" width="800" height="800" />
 
 
 After getting the hardware setup on the board, we moved onto using the microcontroller to interface with it. To do this, that is where a bit of the transferable skills of self research into a manufacturers websites came in handy. Though we were given a good starting point from our instructor as to the links to look towards, it still took a bit of digging to find what we needed. To summarize quickly what we did to get set up with the software side of things:

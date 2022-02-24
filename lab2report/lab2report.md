@@ -71,7 +71,7 @@ Going into the 13MHz clock, we start to see both more noise on the spectrum and 
 Finally for our last measurement, clock 0 is the output of the clock generator breakout board. Again there was much noise gathered here that made the signal look bad as it did for the 13MHz one. Comparing the noise floor on the VNA of the 10KHz clock and this 112MHz clock, we can see a lot more phase noise as the peak is more broad as well in **Figure 6 **and the SNR is lower than it was in the 10KHz spectrum**.** The amount of noise we can see here compared to the 10KHz signal indicates to me that it is not a low noise part.
 
 
-<img src="images/image5.jpg" width="900" height="600" />
+<img src="images/image6.jpg" width="900" height="600" />
 
 
 **Discussion**

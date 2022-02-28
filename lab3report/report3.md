@@ -29,6 +29,8 @@ Mixers are an underappreciated tool used to work with signals in a variety of wa
 
 
 Working to demystify and understand better how this device works, this lab goes through the steps of building one of many various types of mixers called a Double Balanced FET ring mixer shown in **Figure 2**. 
+
+
 <img src="images/image2.jpg" width="400" height="400" />
 
 In getting to understand our measurements on our built RF mixer we will produce at the end of this lab, we must first give a quick review of how mixers work _ideally_. RF mixers are passive devices meaning that just with the input signals they receive, they produce an output signal with no additional power being supplied to the device. Our FET mixer works by switching which is why these types of mixers are also called sampling mixers. An ideal model shown in **Figure 3** breaks down how the ideal sampling mixer switches between +RF input and -RF input at a frequency of LO and this sampling creates the IF output. 

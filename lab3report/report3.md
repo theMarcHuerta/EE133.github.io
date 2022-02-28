@@ -65,7 +65,7 @@ For our measurements we recorded in the lab, we set the LO to be 10MHz and the R
 <img src="images/image6.jpg" width="500" height="400" />
 
 
-**Discussion **
+**Discussion**
 
 After measuring the data from the VNA and visually seeing seeing the two frequencies we want change when adjusting the amplitude of the RF, we found the 1db compression point to be about 1.2Vpp because this is when we observed it stop being linear to the input gain we put in and start sloping in a logarithmic relative to the increase of the RF voltage. We also went down and measured the minimum IF frequency which we got to be around 40Khz shown in **figure 7** with a loss conversion of around -20db. At 20 Khz IF, the loss conversion was -40db.
 

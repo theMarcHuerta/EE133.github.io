@@ -24,7 +24,8 @@ In this lab, we got a chance to learn and construct a mixer– a device that pr
 Mixers are an underappreciated tool used to work with signals in a variety of ways – commonly come across by EE students as a giant X symbol (as shown in **Figure 1**) when modulating or demodulating signals in signal processing.
 
 
-![alt_text](images/image1.jpg "image_tooltip")
+<p align="center">
+  <img src="images/image1.jpg" width="500" height="400" />
 
 
 Working to demystify and understand better how this device works, this lab goes through the steps of building one of many various types of mixers called a Double Balanced FET ring mixer shown in **Figure 2**. 

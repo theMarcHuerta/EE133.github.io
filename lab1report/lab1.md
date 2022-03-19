@@ -102,15 +102,13 @@ Below on Figure 8 is the spice simulation for the capacitor which we see goes do
   
 <p align="center">
   <img src="images/image8.jpg" width="500" height="400" />
-p>
 
 
 The opposite is then true for the inductor which only allows low frequencies to pass so we see it go from allowing low db to peaking and allowing some frequencies through at its resonance frequency which we measured and then simulated to be around 110 MHz shown in figure 9.
 
 
 <p align="center">
-  <img src="images/image9.jpg" width="500" height="400" />
-p>
+  <img src="images/image9.jpg" width="500" height="400"/>
 
 
 **Discussion **

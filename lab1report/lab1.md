@@ -1,11 +1,7 @@
 
 **EE 133: Intro to RF Systems Laboratory**
 
-**Lab 1: The Secret Life of Passive Components**
-
-**And**
-
-**We meet a new friend, the VNA**
+**Lab 1: The Secret Life of Passive Components And We meet a new friend, the VNA**
 
 **Author: Marc Huerta**
 

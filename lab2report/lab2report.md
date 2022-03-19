@@ -84,3 +84,4 @@ This will be a brief discussion of some of the possible applications. |Reading t
 **Summary**
 
 All in all, this lab helped bolster the idea of self-research and the importance incompetence in research parts that one is interested in using. Having a sense of where to look and what to look for (for example a software library) can make the process go faster and smoother. Engineers always would like to make processes simpler and quicker; we accomplished this in this lab by avoiding 1. Building a piece from scratch (like an ossocialtor) and 2. Writing code from scratch for hardware we’re unfamiliar with. Along the way, we also got to keep working with oscilloscopes and VNAs and through testing (and some errors) picked up some tidbits of knowledge and understanding which will be useful going forward. Again, these are practical skills that can transfer over to working on projects such as our final project for this class.
+  

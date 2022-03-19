@@ -60,14 +60,14 @@ A good clock oscillator looks ideally like a perfect square wave. We do know tha
 
 
 <p align="center">
-<img src="images/image4.jpg" width="500" height="350" />
+<img src="images/image4.jpg" width="500" height="300" />
 
 
 Going into the 13MHz clock, we start to see both more noise on the spectrum and see the square wave start to look a bit uglier and imperfect. This is caused by several reasons. First of all, a probe was used to measure the clock generator output and it had the unintended consequences of adding extra unwanted capacitance to the signal measured. As a result, this extra capacitance forms a low-pass filter which filters out high frequencies and hence, makes the square wave look uglier at higher frequencies. The probe also has limited bandwidth lower than the oscilloscope which has a bandwidth of 500MHz so this also contributes. Below in **Figure 5**, is a set up of the probe (left) along with the measured 13MHz clock signal (right).
 
   
 <p align="center">
-<img src="images/image5.jpg" width="500" height="350" />
+<img src="images/image5.jpg" width="500" height="300" />
 
 
 Finally for our last measurement, clock 0 is the output of the clock generator breakout board. Again there was much noise gathered here that made the signal look bad as it did for the 13MHz one. Comparing the SNR on the VNA of the 10KHz clock and this 112MHz clock, we can see a lot more phase noise as the peak is more broad as well in **Figure 6** and the SNR is lower than it was in the 10KHz spectrum. The amount of noise we can see here compared to the 10KHz signal indicates that it is not a low noise part.

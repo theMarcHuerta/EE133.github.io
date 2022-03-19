@@ -25,7 +25,7 @@ Mixers are an underappreciated tool used to work with signals in a variety of wa
 
 
 <p align="center">
-  <img src="images/image1.jpg" width="500" height="400" />
+  <img src="images/image1.jpg" width="500" height="370" />
 
 
 Working to demystify and understand better how this device works, this lab goes through the steps of building one of many various types of mixers called a Double Balanced FET ring mixer shown in **Figure 2**. 
@@ -46,7 +46,7 @@ Additionally, mixers have the power to create frequencies higher than their inpu
 
 
 <p align="center">
-  <img src="images/image4.jpg" width="500" height="400" />
+  <img src="images/image4.jpg" width="500" height="300" />
   
 
 **Experimental Setup**
@@ -55,7 +55,7 @@ To measure anything, we must first build the mixer. This consisted of just four 
 
 
 <p align="center">
-  <img src="images/image5.jpg" width="500" height="400" />
+  <img src="images/image5.jpg" width="500" height="500" />
 
 
 After building the mixer, we were all set up and ready to start testing our mixer. By testing, we want to get a measure of how good our mixer is and to do this, we must understand what even a “good” mixer should do. As described earlier, an ideal mixer in an up-converting system should only output a sum frequency of its two inputs and the difference frequency between the two input frequencies while suppressing the input frequencies and ideally any harmonics. An ideal mixer also has a linear conversion loss of 1 meaning what you put in for RF, is what you get out of LO in dBm. A measure of how ‘good’ a mixer is turns out to be just a list of terms and concepts that measure how much a mixer deviates from its ideal.
@@ -75,7 +75,7 @@ In the figure above, we just methodically wanted to see if our mixer was mixing 
 
 
 <p align="center">
-  <img src="images/image7.jpg" width="500" height="400" />
+  <img src="images/image7.jpg" width="500" height="500" />
 
 
 One of the last measurements to look at for our mixer is called the ‘1 db compression point’. This compression point is based on the deterrence of linearity from the RF input to the IF output and finding out at what input dB does the IF output start to lose its linearly proportional relationship to the RF input. For the purpose of not flooding this report with photos, we will first here talk about measurements made before coming to any conclusions on them. To try and find the 1dB compression point, the first method at approaching this was based on visually ‘eyeballing’ the spectrum of the IF output on the VNA. We had noticed already that as we slowly turned the dBm down or up our input RF signal, the dBm of our IF output seemed to linearly follow with a gap of about 11 dBm of power between them constantly (a conversion gain of about 1/3). The goal here was to tune the dBm of the input RF up (from a low starting dBm) and visually notice when the IF dBm stops increasing linearly with it. This was done while the LO was set to 1Vpp (4 dBm). Starting the RF at 250mVpp (-8 dBm), we increased the dBm slowly and visually, we were able to notice that around 7dBm (1.4Vpp) the relationship stopped being linearly and the gap between input dBm and output dBm grew out of that 11 dBm gap between the RF signal and IF signal meaning the conversion gain got worse. From our knowledge of compression points as well, we know that it is relative to the LO power level as well so in this case, since the LO is at 4 dBm, the 1 dB compression point is about 3 dB higher than our LO. This is an important performance metric for mixers because they tell us how powerful (relative to our LO), our RF input signal could be for us to still get good conversion gain. 
@@ -88,7 +88,7 @@ Another question that arises out of our measurements and curiosity is how low ca
 
 
 <p align="center">
-  <img src="images/image8.jpg" width="500" height="400" />
+  <img src="images/image8.jpg" width="500" height="450" />
 
 
 Additionally, I will discuss why we picked some of the measurement values we did. For example, the RF and LO input frequencies were 2MHz and 10 MHz respectively; this was a bit arbitrary but the idea behind this combination was so the spacing of all the signals (wanted) and spurs (unwanted) we’d be able on the VNA which made it easier to explain things like spurs since in this set up, we’d have spurs mostly in intervals of 2MHz. Another thing we focused on was using our mixer as strictly an up-converter; this was more so done to just focus in one a system that I believed to be more interesting via personal preference and also one that was more than suffice to be able to learn and understand more about the mixer we built. 

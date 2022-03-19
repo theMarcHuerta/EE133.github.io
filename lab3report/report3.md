@@ -7,7 +7,7 @@
 **Lab Partners: Ben Clark and Devorah Simon**
 
 
-                        **_Instructor:_**
+                        **Instructor:**
                         Steven Clark
                         Lecturer
                             Electrical Engineering Department
@@ -80,7 +80,7 @@ In the figure above, we just methodically wanted to see if our mixer was mixing 
 
 One of the last measurements to look at for our mixer is called the ‘1 db compression point’. This compression point is based on the deterrence of linearity from the RF input to the IF output and finding out at what input dB does the IF output start to lose its linearly proportional relationship to the RF input. For the purpose of not flooding this report with photos, we will first here talk about measurements made before coming to any conclusions on them. To try and find the 1dB compression point, the first method at approaching this was based on visually ‘eyeballing’ the spectrum of the IF output on the VNA. We had noticed already that as we slowly turned the dBm down or up our input RF signal, the dBm of our IF output seemed to linearly follow with a gap of about 11 dBm of power between them constantly (a conversion gain of about 1/3). The goal here was to tune the dBm of the input RF up (from a low starting dBm) and visually notice when the IF dBm stops increasing linearly with it. This was done while the LO was set to 1Vpp (4 dBm). Starting the RF at 250mVpp (-8 dBm), we increased the dBm slowly and visually, we were able to notice that around 7dBm (1.4Vpp) the relationship stopped being linearly and the gap between input dBm and output dBm grew out of that 11 dBm gap between the RF signal and IF signal meaning the conversion gain got worse. From our knowledge of compression points as well, we know that it is relative to the LO power level as well so in this case, since the LO is at 4 dBm, the 1 dB compression point is about 3 dB higher than our LO. This is an important performance metric for mixers because they tell us how powerful (relative to our LO), our RF input signal could be for us to still get good conversion gain. 
 
-**Discussion **
+**Discussion**
 
 A couple things were left untalked about in our measurements and results section, of which first I wanted to talk about the how in **Figure 7** specifically, there were 2 other high dBm frequencies besides the expected ones. As described earlier, spurs are the result of the mixing of the harmonics of the input frequencies into RF and LO because mixers mix all input signals. This spur is the result directly of the mixing of the 3rd harmonic of the LO and the RF signal which results in these prominent frequencies at 28MHz and 32MHz. Spur frequencies (Fspur) can be predicted by the simple formula at Freq of spur = m*Freq of RF + n*Freq of LO for all m,n that don’t equal 0. In the measurement in **Figure 7**, we see m = 1 and n = 3. This formula also explains the various spurs we see mostly arising at even frequencies and every 2MHz or so throughout mostly all our measurements.
 

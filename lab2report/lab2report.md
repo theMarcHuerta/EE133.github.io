@@ -32,7 +32,7 @@ To begin, I’ll list out the 2 main physical pieces of hardware we were given t
 
 <img src="images/image1.jpg" 
         alt="Picture" 
-        width="600" 
+        width="500" 
         height="400" 
         style="display: block; margin: 0 auto" />
 

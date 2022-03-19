@@ -30,11 +30,8 @@ The goals still stood of actually understanding how to use a clock generator and
 
 To begin, let’s list out the 2 main physical pieces of hardware we were given to start this lab. Firstly as already mentioned, we were given a Adafruit Si5351A Clock Generator Breakout Board and secondly we were given an Adafruit ItsyBitsy M4 express. Of note right away is that they are both parts made by Adafriuit so the hope with this is that the ItsyBitsy will have support in the form of a code library to help us interface face with the Si5351A. To recap this first step, we got these 2 pieces of hardware and soldered on three end-launch SMA connectors onto the clock generator breakout board. We then with some jumper wires connected the corresponding pins from the breakout board to the microcontroller and double checked on the breakout board documentation if these were the correct pins to connect the board to. The put together board can be seen here in **Figure 1**. 
 
-<img src="images/image1.jpg" 
-        alt="Picture" 
-        width="500" 
-        height="400" 
-        style="display: block; margin: 0 auto" />
+<p align="center">
+  <img src="images/image1.jpg" width="500" height="400" />
 
 
 After getting the hardware setup on the board, we moved onto using the microcontroller to interface with it. This where the transferable skills of self research into a manufacturers websites came in handy. Though we were given a good starting point from our instructor as to the links to look towards, it still took a bit of digging to find what we needed. To summarize quickly what we did to get set up with the software side of things:
@@ -44,7 +41,7 @@ After getting the hardware setup on the board, we moved onto using the microcont
 
 After doing all these steps and sifting through various libraries to download and run the clock generator with ease, we got to this point as shown in **Figure 2** where we had editable code and could run 3 different clock frequencies on the breakout board!
 
-
+<p align="center">
 <img src="images/image2.jpg" width="600" height="500" />
 
 

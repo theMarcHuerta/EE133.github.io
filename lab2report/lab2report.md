@@ -7,7 +7,7 @@
 **Lab Partners: Ben Clark and Devorah Simon**
 
 
-                        **_Instructor:_**
+                        Instructor:
                         Steven Clark
                         Lecturer
                         Electrical Engineering Department

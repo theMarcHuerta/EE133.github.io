@@ -34,9 +34,9 @@ In our lab, students of the class were given a handout and objectives; among the
 
 To start, we were given mini-VNAs, specifically the NanoVNA2 Plus4 ( shown in Figure 1). These are small but relatively affordable VNAs that were accurate enough to get the important measurements we needed. Ease of use is important and with this miniVNA we were able to get that; there is open source software called vna_qt available to interface the VNA with our computer which allows us to view the VNA Smith chart and VNA data on our computers.
 
-
-![alt_text](images/image1.jpg "image_tooltip")
-
+<p align="center">
+  <img src="images/image1.jpg" width="600" height="500" />
+p>
 
 After getting the NanoVNA software downloaded and booted, we connected and powered on our NanoVNA to our computer to interface with the software. On the software, it gives us options for calibration and on the webpage for the software, it also shows us the steps for calibration. Within the given handout for class, it reminds us of SOLT (Short, Open, Load, Through) for calibration. All went smooth and with our connected wires and we calibrated the VNA successfully.
 

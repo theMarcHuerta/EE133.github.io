@@ -42,7 +42,7 @@ After getting the hardware setup on the board, we moved onto using the microcont
 After doing all these steps and sifting through various libraries to download and run the clock generator with ease, we got to this point as shown in **Figure 2** where we had editable code and could run 3 different clock frequencies on the breakout board!
 
 <p align="center">
-<img src="images/image2.jpg" width="600" height="500" />
+<img src="images/image2.jpg" width="500" height="420" />
 
 
 **Measurements and Results**
@@ -51,26 +51,30 @@ Before we can formulate more specific questions, the first and most important qu
 
 To start with the cleanest output we got, we refer to clock 2 running at 10.7KHz as we see in **Figure 2**, the bottom of the screen is the serial output which is coded to show us frequencies each clock is running at. Here is a good point to form a basis of how internally the Si5351A does this at the level of a block diagram. Shown below in **Figure 3.** Essentially what the code does is it sets each PLL (both A and B) to a multiple frequency of the onboard 25MHz reference crystal. Within the PLL part of the diagram, there is some internal multiplier that does this and with the arduino and I2C interface, we can set the multiple of the local reference oscillator we want the PLL to be set to. Then for the clock output, it divides this intermediary frequency using fractional dividers which essentially just means it can divide this intermediary frequency fractional by a divisor of 1MHz to 100KHz. The range on an output of a clock is said by the manufacturer to be 160Mhz to as low as 8KHz.
 
-
-<img src="images/image3.jpg" width="800" height="600" />
+  
+<p align="center">
+<img src="images/image3.jpg" width="500" height="350" />
 
 
 A good clock oscillator looks ideally like a perfect square wave. We do know that due to the fact we can’t have infinitely summed high frequencies, there will be imperfections in a recreated square wave, usually some sort of Gibbs phenomenon which leads to peaking at the rising edge of the clock and at the falling edge. Now we look at **Figure 4** on the left hand side, we can see that the 10KHz clock signal on the oscilloscope looks pretty good like a square wave with some of that gibbs phenomena discussed. On the right hand side, we see a measurement on the VNA (this picture taken courtesy of lab partner Devorah Simon). We see there is relatively low noise surrounding the signal as well. 
 
 
-<img src="images/image4.jpg" width="800" height="500" />
+<p align="center">
+<img src="images/image4.jpg" width="500" height="350" />
 
 
 Going into the 13MHz clock, we start to see both more noise on the spectrum and see the square wave start to look a bit uglier and imperfect. This is caused by several reasons. First of all, a probe was used to measure the clock generator output and it had the unintended consequences of adding extra unwanted capacitance to the signal measured. As a result, this extra capacitance forms a low-pass filter which filters out high frequencies and hence, makes the square wave look uglier at higher frequencies. The probe also has limited bandwidth lower than the oscilloscope which has a bandwidth of 500MHz so this also contributes. Below in **Figure 5**, is a set up of the probe (left) along with the measured 13MHz clock signal (right).
 
-
-<img src="images/image5.jpg" width="800" height="400" />
+  
+<p align="center">
+<img src="images/image5.jpg" width="500" height="350" />
 
 
 Finally for our last measurement, clock 0 is the output of the clock generator breakout board. Again there was much noise gathered here that made the signal look bad as it did for the 13MHz one. Comparing the SNR on the VNA of the 10KHz clock and this 112MHz clock, we can see a lot more phase noise as the peak is more broad as well in **Figure 6** and the SNR is lower than it was in the 10KHz spectrum. The amount of noise we can see here compared to the 10KHz signal indicates that it is not a low noise part.
 
-
-<img src="images/image6.jpg" width="900" height="600" />
+  
+<p align="center">
+<img src="images/image6.jpg" width="500" height="330" />
 
 
 **Discussion**
